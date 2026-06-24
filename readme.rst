@@ -1,70 +1,55 @@
-###################
-What is CodeIgniter
-###################
+# 🛒 AdminShop-MVC
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+A dynamic and responsive e-commerce platform built using the **CodeIgniter** framework and the **SB Admin 2** interface. This project implements a structured *Model-View-Controller* (MVC) architecture, designed to provide a seamless shopping experience for customers and effortless store management for administrators.
 
-*******************
-Release Information
-*******************
+## ✨ Key Features
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+### 🛍️ Customer Side (User)
+*   **Product & Category Catalog:** Structured product navigation based on categories (e.g., Electronics, Men's Clothing).
+*   **Shopping Cart System:** Intuitive addition, removal, and management of shopping items prior to checkout.
+*   **Checkout & Payment:** Secure and structured order completion process.
+*   **User Authentication:** Registration and login system for a personalized shopping history.
 
-**************************
-Changelog and New Features
-**************************
+### ⚙️ Administrator Side (Admin Panel)
+*   **Analytics Dashboard:** Overview of sales data and store performance with graphical visualization (integrated with Chart.js).
+*   **Inventory Management:** Real-time *Create, Read, Update, Delete* (CRUD) operations for product data.
+*   **Transaction Management:** Review incoming orders, print capabilities, and detailed *Invoice* history.
+*   **DataTables Integration:** Fast search, sorting, and pagination features for managing large amounts of data.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+## 🛠️ Tech Stack
 
-*******************
-Server Requirements
-*******************
+*   **Backend:** PHP, CodeIgniter 3
+*   **Frontend:** HTML5, CSS3, SCSS, JavaScript
+*   **UI Framework:** Bootstrap 4 (SB Admin 2 Template)
+*   **Database:** MySQL
+*   **Libraries/Plugins:** FontAwesome (Icons), Chart.js (Charts), DataTables (Table Management)
 
-PHP version 5.6 or newer is recommended.
+## 🚀 Installation Guide (Local Development)
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+Follow these steps to run the project in your local environment:
 
-************
-Installation
-************
+1.  **System Requirements:** Ensure you have installed a local web server (such as XAMPP, Laragon, or MAMP) that supports PHP and MySQL.
+2.  **Clone Repository:**
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+    ```
+3.  **Move the Folder:** Place the project folder inside your web server's document root directory (e.g., `htdocs` for XAMPP or `www` for Laragon).
+4.  **Database Configuration:**
+    *   Open phpMyAdmin or any other database client.
+    *   Create a new database (e.g., `db_toko_online`).
+    *   Import the provided SQL database file into the newly created database.
+5.  **Application Configuration:**
+    *   Open the `application/config/database.php` file.
+    *   Adjust the database configuration:
+        ```php
+        'hostname' => 'localhost',
+        'username' => 'root', // adjust to your database username
+        'password' => '',     // adjust to your database password
+        'database' => 'db_toko_online',
+        ```
+    *   Adjust the `$config['base_url']` value inside `application/config/config.php` to match your local URL.
+6.  **Run the Application:** Open a web browser and access your project's local URL (e.g., `http://localhost/toko_online`).
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+## 👨‍💻 Author
 
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+*   **Daniel Renato Marlen** - *Software Engineer*
