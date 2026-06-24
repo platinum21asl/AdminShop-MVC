@@ -52,4 +52,4 @@ Follow these steps to run the project in your local environment:
 
 ## 👨‍💻 Author
 
-*   **Daniel Renato Marlen** - *Software Engineer*
+*   **Daniel Renato** - *Software Engineer*
